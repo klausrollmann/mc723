@@ -104,7 +104,8 @@ Processador:
     Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz
     
 Para esse processador, foram testadas algumas flags obtidas de acordo com a referência:
-* ##### native
+##### native
+
 Comandos:
 
     $ gcc primo.c -mtune=native -o run
@@ -113,7 +114,8 @@ Comandos:
 Saida:
 
     Min: 0.3020	Max: 0.3160	Average: 0.3074
-* ##### core-avx-i
+
+##### core-avx-i
 Comandos:
 
     $ gcc primo.c -mtune=core-avx-i -o run
@@ -229,8 +231,6 @@ Comandos:
 
 O resultado do gprof foi simplificado e está mostrado abaixo.
 
-	granularity: each sample hit covers 2 byte(s) for 1.56% of 0.64 seconds
-  
   	index % time    self  children    called     name
   	                0.64    0.00   99998/99998       main [2]
   	[1]    100.0    0.64    0.00   99998         primo [1]
