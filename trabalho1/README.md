@@ -9,7 +9,7 @@ Nessa etapa do projeto, foram avaliados os desempenhos dos 30 computadores com b
 Para os benchmarks 1, 2 e 3 foram feitas análises de desempenho e classificação dos computadores para cada medida avaliada. Em seguida, todos os computadores foram avaliados com relação ao tempo de execução e foi feita uma classificação geral.
 
 ### Metodologia
-A comparação dos computadores foi feita de forma semelhante a feita pelo SPEC[^fn1], que calcula uma taxa que representa a relação de desempenho entre o computador avaliado e o computador de referência, e então calcula a média geométrica dessas taxas para um conjunto de benchmarks.
+A comparação dos computadores foi feita de forma semelhante a feita pelo SPEC[1], que calcula uma taxa que representa a relação de desempenho entre o computador avaliado e o computador de referência, e então calcula a média geométrica dessas taxas para um conjunto de benchmarks.
 
 As taxas calculadas são sempre uma medida de 'quão rápido uma máquina é em relação a máquina referência'. Sendo assim, algumas vezes a máquina mais rápida é que apresenta a menor medida, nesses casos o inverso das medidas pode ser considerado para obter a medida de rapidez em relação a outra medida.
 
@@ -27,6 +27,10 @@ Para esse experimento, a máquina de referência foi a máquina `12 - debios`, e
 ##### Taxa de disco
 Uma máquina é mais rápida na escrita no disco se tem uma maior taxa de escrita, sendo assim a taxa de disco é calculada como:
 
+	$ \frac{a}{b} $
+
+$ \frac{a}{b} $
+
 <img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTaxa%20de%20escrita%20maquina%7D%7D%7B%5Ctext%7BTaxa%20de%20escrita%20referencia%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Taxa de escrita maquina}}{\text{Taxa de escrita referencia}}" width="150" height="40" />
     
 Assim, quanto mais rápido a escrita, maior o valor da taxa calculada.
@@ -43,6 +47,7 @@ Para chegar a uma classificação, foi feita  média geométrica das duas taxas 
 A tabela abaixo mostra os resultados
 
 Tabela 1 - Classificação dos computadores do melhor desempenho para o menor para o benchmark 1.
+
 | Máquina | Nome               | Tempo  | Desvio | Performance Disco | Desvio | Taxa Tempo | Taxa Disco | Média |
 |---------|--------------------|--------|--------|-------------------|--------|------------|------------|-------|
 | 5       | Klaus Rollman      | 59,38  | 4,58   | 133,61            | 7,58   | 1,04       | 1,64       | 1,30  |
@@ -85,6 +90,7 @@ A taxa de tempo também foi calculada como:
 Novamente, os resultados foram obtidos tirando a média geométrica das três taxas. 
 
 Tabela 2 - Classificação dos computadores do melhor desempenho para o menor para o benchmark 2.
+
 | Máquina | Nome              | Page Faults | Misses          | Tempo de Execução | Taxa PF | Taxa CM | Taxa Tempo | Média |
 |---------|-------------------|-------------|-----------------|-------------------|---------|---------|------------|-------|
 | 6       | yk0 - Yugo Kuno   | 16470       | 918315918       | 32,576            | 1,24    | 1,34    | 0,95       | 1,17  |
@@ -123,6 +129,7 @@ Para leitura a taxa é:
 A tabela com a classificação dos computadores para escrita, leitura e tempo estão mostradas abaixo.
 
 Tabela 3 - Classificação dos computadores do melhor desempenho para o menor para o benchmark 3.
+
 | Máquina | Nome              | escrita (MB/s) | leitura (MB/s) | Tempo (s) | Taxa WR | Taxa RD | Taxa Tempo | Média |
 |---------|-------------------|----------------|----------------|-----------|---------|---------|------------|-------|
 | 15      | Gabriel Magalhães | 1758,20        | 4031,00        | 7,98      | 127,41  | 43,77   | 3,17       | 26,06 |
@@ -205,5 +212,4 @@ A classificação geral é mostrada abaixo, em que a média representa a média 
 Pela tabela, é possível notar que as máquinas com melhor desempenho são em geral as com melhor processador, e as com pior desempenho são com os piores processadores. Sendo assim, pode-se concluir que o benchmark avaliou basicamente quais máquinas possuem os melhores processadores.
 
 ### Referências
-[^fn1]: David A. Patterson and John L. Hennessy, Computer Organization and Design, 4th Edition, p.48-50.
-
+[1]: David A. Patterson and John L. Hennessy, Computer Organization and Design, 4th Edition, p.48-50.
