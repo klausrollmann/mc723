@@ -27,18 +27,14 @@ Para esse experimento, a máquina de referência foi a máquina `12 - debios`, e
 ##### Taxa de disco
 Uma máquina é mais rápida na escrita no disco se tem uma maior taxa de escrita, sendo assim a taxa de disco é calculada como:
 
-[![formula1](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/write_formula.png)]
-
-![formula2](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/write_formula.png)
-
-[(https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/write_formula.png)]
+![formula1](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/write_formula.png)
 
 Assim, quanto mais rápido a escrita, maior o valor da taxa calculada.
 
 ##### Taxa de tempo
 Uma máquina é mais rápida se leva menos tempo para completar uma tarefa, sendo assim ela é mais rápida de o inverso do tempo for maior. A taxa de tempo é então:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTempo%20decorrido%20referencia%7D%7D%7B%5Ctext%7BTempo%20decorrido%20maquina%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Tempo decorrido referencia}}{\text{Tempo decorrido maquina}}" width="150" height="40" />
+![formula2](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/time_formula.png)
     
 Assim, a taxa indica que a máquina é tantas vezes mais rápida que a referência.
 
@@ -76,15 +72,16 @@ Para esse benchmark, a máquina de referência foi a máquina `5 - Klaus Rollman
 ##### Taxa de page-faults
 Para calcular a taxa de page-faults, foi feito
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BPage-faults%20referencia%7D%7D%7B%5Ctext%7BPage-faults%20maquina%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Page-faults referencia}}{\text{Page-faults maquina}}" width="150" height="40" />
+![formula3](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/page_fault_formula.png)
+
 ##### Taxa de cache-misses
 De forma semelhante, a taxa de cache-misses foi calculada como:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BCache-miss%20referencia%7D%7D%7B%5Ctext%7BCache-miss%20maquina%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Cache-miss referencia}}{\text{Cache-miss maquina}}" width="150" height="40" />
+![formula4](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/cache_formula.png)
 ##### Taxa de tempo
 A taxa de tempo também foi calculada como:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTempo%20decorrido%20referencia%7D%7D%7B%5Ctext%7BTempo%20decorrido%20maquina%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Tempo decorrido referencia}}{\text{Tempo decorrido maquina}}" width="150" height="40" />
+![formula5](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/time_formula.png)
 
 ##### Resultados
 Novamente, os resultados foram obtidos tirando a média geométrica das três taxas. 
@@ -116,14 +113,15 @@ O terceiro benchmark utilizado consistiu em realizar a operação de convoluçã
 ##### Taxa de escrita
 Para escrita, a fórmula utilizada é dada por:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTaxa%20de%20escrita%20maquina%7D%7D%7B%5Ctext%7BTaxa%20de%20escrita%20referencia%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Taxa de escrita maquina}}{\text{Taxa de escrita referencia}}" width="150" height="40" />
+![formula223](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/write_formula.png)
+
 ##### Taxa de leitura
 Para leitura a taxa é:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTaxa%20de%20leitura%20maquina%7D%7D%7B%5Ctext%7BTaxa%20de%20leitura%20referencia%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Taxa de leitura maquina}}{\text{Taxa de leitura referencia}}" width="150" height="40" />
+![formula2](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/read_formula.png)
 
 ##### Taxa de tempo
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTempo%20decorrido%20referencia%7D%7D%7B%5Ctext%7BTempo%20decorrido%20maquina%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Tempo decorrido referencia}}{\text{Tempo decorrido maquina}}" width="150" height="40" />
+![formula2](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/time_formula.png)
 
 ##### Resultados
 A tabela com a classificação dos computadores para escrita, leitura e tempo estão mostradas abaixo.
@@ -153,7 +151,7 @@ Além disso, tanto a escrita e leitura parecem ter tido certa influência no tem
 Assim, esse benchmark, assim como o primeiro, parece ser uma boa forma de avaliar o desempenho de um computador para realizar a tarefa.
 
 #### Comparação dos Benchmarks
-A partir dos resultados obtidos nos benchmarks 1, 2 e 3, foi possível notar que a classificação dos computadores variou muito. Alguns computadores tiveram bons resultados em relação ao disco, mas resultados ruins para tempo de execução. O contrário também pode ser visto. Isso reforça a importância de que o benchmark avalia somente o desempenho para uma tarefa específica, sendo necessário, portanto, o uso de múltiplos benchmarks para se ter uma boa medida de desempenho de um computador. Somente assim pode-se considerar a comparação entre um computador e outro.  
+A partir dos resultados obtidos nos benchmarks 1, 2 e 3, foi possível notar que a classificação dos computadores variou muito. Alguns computadores tiveram bons resultados em relação ao disco, mas resultados ruins para tempo de execução. O contrário também pode ser visto. Isso reforça a importância de que o benchmark avalia somente o desempenho para uma tarefa específica, sendo necessário, portanto, o uso de múltiplos benchmarks para se ter uma boa medida de desempenho de um computador. Somente assim pode-se considerar a comparação entre um computador e outro.
 
 ### Classificação Geral
 Nessa etapa foi feita a classificação geral dos computadores com base no resultado de todos os benchmark.
@@ -167,7 +165,7 @@ Para chegar nos resultadoso abaixo, foi calculada a taxa de cada computador refe
 
 A taxa para cada benchmark foi calculada da seguinte forma:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTempo%20decorrido%20referencia%7D%7D%7B%5Ctext%7BTempo%20decorrido%20maquina%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Tempo decorrido referencia}}{\text{Tempo decorrido maquina}}" width="150" height="40" />
+![formula657](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/time_formula.png)
 
 Todas as medidas de tempo foram consideradas, para mais detalhes pode-se verificar a planilha `benchmark_medidas.ods`
 
