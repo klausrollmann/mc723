@@ -171,6 +171,8 @@ Todas as medidas de tempo foram consideradas, para mais detalhes pode-se verific
 
 A classificação geral é mostrada abaixo, em que a média representa a média geométrica de todas as taxas para todos os benchmarks. Basicamente ela indica qual computador foi mais rápido que a referência considerando a média de testes.
 
+Tabela 4 - Classificação geral dos computadores do melhor desempenho para o menor para as medidas de benchmark de tempo de todos os benchmarks.
+
 | #  | Máquina | Nome                  | Descrição CPU                                                                                                                                  | Média        |
 |----|---------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 1  | 18      | João Fidélis          | Intel Core i7-Intel(R) Core(TM) i7-4700HQ CPU @ 2.40GHz x 4, 16GB DDR3, Ubuntu 14.04LTS, HD: WD10S21X-24R1BTO / 7200RPM / Sata III             | 1,5676611742 |
@@ -207,7 +209,7 @@ A classificação geral é mostrada abaixo, em que a média representa a média 
 | -  | 29      | João Paulo            | Intel(R) Core(TM) i7-4510U CPU @ 2.00GHz; Memory 16 GB; Ubuntu 14.04.4                                                                         | Insuficiente |
 
 #### Análise dos Resultados
-Pela tabela, é possível notar que as máquinas com melhor desempenho são em geral as com melhor processador, e as com pior desempenho são com os piores processadores. Sendo assim, pode-se concluir que o benchmark avaliou basicamente quais máquinas possuem os melhores processadores.
+Pela tabela, é possível notar que as máquinas com melhor classificação são as com melhor processador, e as com pior classificação são as com os piores processadores. Sendo assim, pode-se concluir que o benchmark conseguiu comparar as máquinas corretamente para o fator de melhor desempenho de processamento.
 
 ### Referências
 [1]: David A. Patterson and John L. Hennessy, Computer Organization and Design, 4th Edition, p.48-50.
