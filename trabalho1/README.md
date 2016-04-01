@@ -27,10 +27,7 @@ Para esse experimento, a máquina de referência foi a máquina `12 - debios`, e
 ##### Taxa de disco
 Uma máquina é mais rápida na escrita no disco se tem uma maior taxa de escrita, sendo assim a taxa de disco é calculada como:
 
-	$ \frac{a}{b} $
-
-$ \frac{a}{b} $
-
+[img]http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTaxa%20de%20leitura%20maquina%7D%7D%7B%5Ctext%7BTaxa%20de%20leitura%20referencia%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
 <img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTaxa%20de%20escrita%20maquina%7D%7D%7B%5Ctext%7BTaxa%20de%20escrita%20referencia%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{\text{Taxa de escrita maquina}}{\text{Taxa de escrita referencia}}" width="150" height="40" />
     
 Assim, quanto mais rápido a escrita, maior o valor da taxa calculada.
