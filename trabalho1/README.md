@@ -11,7 +11,7 @@ Para os benchmarks 1, 2 e 3 foram feitas análises de desempenho e classificaç�
 ### Metodologia
 A comparação dos computadores foi feita de forma semelhante a feita pelo SPEC[1], que calcula uma taxa que representa a relação de desempenho entre o computador avaliado e o computador de referência, e então calcula a média geométrica dessas taxas para um conjunto de benchmarks.
 
-As taxas calculadas são sempre uma medida de 'quão rápido uma máquina é em relação a máquina referência'. Sendo assim, algumas vezes a máquina mais rápida é que apresenta a menor medida, nesses casos o inverso das medidas pode ser considerado para obter a medida de rapidez em relação a outra medida.
+As taxas calculadas são sempre uma medida de 'quão rápido uma máquina é em relação a máquina referência'. Sendo assim, algumas vezes, a máquina mais rápida é a que apresenta a menor medida, nesses casos o inverso das medidas pode ser considerado para obter a medida de rapidez em relação a outra máquina.
 
 Entretanto, as medidas obtidas foram limitadas, pois não houve um conjunto considerável de computadores que realizou um mesmo grupo de benchmarks. Desse modo, as medidas de benchmarks aqui obtidas poderiam ser mais precisas se todos os computadores tivessem feito todos os benchmarks.
 
