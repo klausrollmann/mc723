@@ -29,6 +29,10 @@ Uma máquina é mais rápida na escrita no disco se tem uma maior taxa de escrit
 
 [![formula1](https://github.com/klausrollmann/mc723/tree/master/trabalho1/time_formula.png)]
 
+[![formula1](https://raw.githubusercontent.com/klausrollmann/mc723/master/trabalho1/time_formula.png)]
+
+[![formula1](https://github.com/klausrollmann/mc723/tree/master/trabalho1/time_formula.png)]
+
 [![formula2] (http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Ctext%7BTaxa%20de%20escrita%20maquina%7D%7D%7B%5Ctext%7BTaxa%20de%20escrita%20referencia%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)]
     
 Assim, quanto mais rápido a escrita, maior o valor da taxa calculada.
