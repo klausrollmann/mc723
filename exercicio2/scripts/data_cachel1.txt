@@ -1,0 +1,110 @@
+Teste 164 f2b
+
+
+Teste tamanho da cache L1
+Block size: 32bytes
+Tamanho da cache L1: 1K
+Miss Rate
+0.0579
+0.1596
+Tamanho da cache L1: 2K
+Miss Rate
+0.0194
+0.1001
+Tamanho da cache L1: 4K
+Miss Rate
+0.0121
+0.0804
+Tamanho da cache L1: 8K
+Miss Rate
+0.0120
+0.0689
+Tamanho da cache L1: 16K
+Miss Rate
+0.0120
+0.0620
+Tamanho da cache L1: 32K
+Miss Rate
+0.0120
+0.0554
+Tamanho da cache L1: 64K
+Miss Rate
+0.0000
+0.0486
+Teste tamanho do bloco L1
+Cache size: 16KBytes
+Tamanho do bloco: 1 B
+Miss Rate
+0.0447
+0.1631
+Tamanho do bloco: 2 B
+Miss Rate
+0.0447
+0.1615
+Tamanho do bloco: 4 B
+Miss Rate
+0.0447
+0.1593
+Tamanho do bloco: 8 B
+Miss Rate
+0.0280
+0.1473
+Tamanho do bloco: 16 B
+Miss Rate
+0.0178
+0.0904
+Tamanho do bloco: 32 B
+Miss Rate
+0.0120
+0.0620
+Tamanho do bloco: 64 B
+Miss Rate
+0.0076
+0.0498
+Tamanho do bloco: 128 B
+Miss Rate
+0.0076
+0.0486
+Tamanho do bloco: 256 B
+Miss Rate
+0.0038
+0.0547
+Tamanho do bloco: 512 B
+Miss Rate
+0.0038
+0.0672
+Tamanho do bloco: 1024 B
+Miss Rate
+0.0038
+0.0885
+Tamanho do bloco: 2048 B
+Miss Rate
+0.0062
+0.1220
+Tamanho do bloco: 4096 B
+Miss Rate
+0.0135
+0.1855
+Teste associatividade cache L1
+Cache size: 16KBytes
+Block size: 64Bytes
+Associatividade: 1
+Miss Rate
+0.0076
+0.0498
+Associatividade: 2
+Miss Rate
+0.0000
+0.0425
+Associatividade: 4
+Miss Rate
+0.0000
+0.0419
+Associatividade: 8
+Miss Rate
+0.0000
+0.0418
+Associatividade: 16
+Miss Rate
+0.0000
+0.0415

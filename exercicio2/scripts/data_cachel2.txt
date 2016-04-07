@@ -1,0 +1,135 @@
+Teste 164 f2b
+
+
+Teste tamanho da cache L2
+Block size: 64bytes
+Tamanho da cache L2: 8K
+Miss Rate
+0.0000
+0.0425
+0.9160
+Tamanho da cache L2: 16K
+Miss Rate
+0.0000
+0.0425
+0.7479
+Tamanho da cache L2: 32K
+Miss Rate
+0.0000
+0.0425
+0.5912
+Tamanho da cache L2: 64K
+Miss Rate
+0.0000
+0.0425
+0.4415
+Tamanho da cache L2: 128K
+Miss Rate
+0.0000
+0.0425
+0.2713
+Tamanho da cache L2: 256K
+Miss Rate
+0.0000
+0.0425
+0.1476
+Tamanho da cache L2: 512K
+Miss Rate
+0.0000
+0.0425
+0.1291
+Tamanho da cache L2: 1024K
+Miss Rate
+0.0000
+0.0425
+0.1281
+Teste tamanho do bloco L2
+Cache size: 512KBytes
+Tamanho do bloco: 4 B
+Miss Rate
+0.0000
+0.0425
+0.2307
+Tamanho do bloco: 8 B
+Miss Rate
+0.0000
+0.0425
+0.2307
+Tamanho do bloco: 16 B
+Miss Rate
+0.0000
+0.0425
+0.2307
+Tamanho do bloco: 32 B
+Miss Rate
+0.0000
+0.0425
+0.2307
+Tamanho do bloco: 64 B
+Miss Rate
+0.0000
+0.0425
+0.2307
+Tamanho do bloco: 128 B
+Miss Rate
+0.0000
+0.0425
+0.1291
+Tamanho do bloco: 256 B
+Miss Rate
+0.0000
+0.0425
+0.0783
+Tamanho do bloco: 512 B
+Miss Rate
+0.0000
+0.0425
+0.0530
+Tamanho do bloco: 1024 B
+Miss Rate
+0.0000
+0.0425
+0.0403
+Tamanho do bloco: 2048 B
+Miss Rate
+0.0000
+0.0425
+0.0204
+Tamanho do bloco: 4096 B
+Miss Rate
+0.0000
+0.0425
+0.0106
+Teste associatividade L2
+Cache size: 4KBytes
+Block size: 4096Bytes
+Associatividade: 1
+Miss Rate
+0.0000
+0.0425
+0.0106
+Associatividade: 2
+Miss Rate
+0.0000
+0.0425
+0.0101
+Associatividade: 4
+Miss Rate
+0.0000
+0.0425
+0.0100
+Associatividade: 8
+Miss Rate
+0.0000
+0.0425
+0.0100
+Associatividade: 16
+Miss Rate
+0.0000
+0.0425
+0.0100
+Associatividade: 32
+Miss Rate
+0.0000
+0.0425
+0.0100
