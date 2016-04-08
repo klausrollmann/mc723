@@ -5,7 +5,7 @@
 *RA: 146810*
 
 ## Introdução
-Nesse trabalho foram exploradas as configurações de cache para os níveis L1 e L2 e tentou-se encontrar a melhor configuração reduzir a taxa de miss-rates para um determinado programa.
+Nesse trabalho foram exploradas as configurações de cache para os níveis L1 e L2 e tentou-se encontrar a melhor configuração para reduzir a taxa de miss-rates de um determinado programa.
 
 ##  Metodologia
 Para encontrar a menor taxa de miss-rates para um determinado programa, foram variados os valores do tamanho do cache L1, em seguida variou-se o tamanho do bloco do cache L1 e também variou-se a associatividade. O mesmo foi feito com o cache L2. A melhor configuração de cada teste foi usada para o próximo teste, com isso foi possível encontrar uma boa aproximação para a melhor configuração de cache possível, sem ter que realizar um número muito grande de testes.
