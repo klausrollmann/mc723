@@ -8,7 +8,7 @@
 Nesse trabalho foram exploradas as configurações de cache para os níveis L1 e L2 e tentou-se encontrar a melhor configuração reduzir a taxa de miss-rates para um determinado programa.
 
 ##  Metodologia
-Para encontrar a menor taxa de miss-rates para um determinado programa, foram variados os valores do tamanho do cache L1, em seguida variou-se o tamanho do bloco do cache L1 e também variou-se a associatividade. O mesmo foi feito com o cache L2. A melhor configuração de cada teste foi usada para o próximo teste, com isso foi possível encontrar uma boa aproximação para a melhor configuração de cache possível.  
+Para encontrar a menor taxa de miss-rates para um determinado programa, foram variados os valores do tamanho do cache L1, em seguida variou-se o tamanho do bloco do cache L1 e também variou-se a associatividade. O mesmo foi feito com o cache L2. A melhor configuração de cada teste foi usada para o próximo teste, com isso foi possível encontrar uma boa aproximação para a melhor configuração de cache possível, sem ter que realizar um número muito grande de testes.
 É importante notar que algumas configurações foram escolhidas mesmo tendo uma taxa de miss rate maior. Isso ocorreu quando um aumento considerável na medida não trazia uma melhora significativa na taxa de miss.
 
 ## Ferramentas Utilizadas
@@ -23,7 +23,7 @@ Os traces utilizados foram F2B e M2B para o programa 164 (gzip). O trace F2B exe
 ## Trace 164.F2B
 ### Cache L1
 Inicialmente foram variadas as configurações do cache L1. As configurações que variaram foram tamanho do cache, tamanho do bloco e associatividade. Os caches L1 de dados e de instruções foram variados simultaneamente em um primeiro momento.
-Os dados do experimento podem ser reproduzidos usando o script `L1-teste.sh`
+Os dados do experimento podem ser reproduzidos usando o script `L1-teste.sh`.
 
 ##### Tamanho do Cache
 Para obter o melhor tamanho de cache foi variado o tamanho entre valores comuns de cache L1. Nesse caso o tamanho do bloco ficou fixo em 32KB, e somente o tamanho variou. O gráfico abaixo mostra os resultados.
@@ -47,7 +47,7 @@ Para a associatividade, foi variado o valor de associatividade de 1 até 16, man
 Observando o gráfico, é possível ver que a partir da associatividade 2 não se nota diferenças nas taxas de miss. Sendo assim, tanto para cache de dados e de instruções, foi escolhido a configuração de cache com associatividade 2.
 
 ### Cache L2
-Uma vez encontrada uma boa configuração de cache L1, tentou-se também reduzir a taxa de misses no cache L2. Para isso, foram variadas as configurações de cache L2, mantendo a configuração do cache L1 obtida anteriormente. O script com os comandos é o `L2-teste.sh`.
+Uma vez encontrada uma boa configuração de cache L1, tentou-se também reduzir a taxa de misses no cache L2. Para isso, foram variadas as configurações de cache L2, mantendo a configuração do cache L1 obtida anteriormente. O script com os comandos é o `L2-teste.sh`, e os resultados medidos estão na planilha.
 
 ##### Tamanho do Cache
 O tamanho do cache L2 ideal foi facilmente verificado pelo gráfico mostrado abaixo.
@@ -74,7 +74,7 @@ Pelo gráfico, é possível ver que a taxa de miss não diminui para associativi
 ## Trace 164.M2B
 O mesmo procedimento foi feito para o trace M2B, para verificar se a melhor configuração obtida na parte F2B é a mesma, ou se há muita discrepância nos resultados. Os resultados são mostrados nas seções abaixo.
 ### Cache L1
-O script `L1-teste2.sh` foi executado e os resultados encontram-se na planilha `resultados.sh`
+O script `L1-teste2.sh` foi executado e os resultados encontram-se na planilha `resultados.ods`
 ##### Tamanho do Cache
 
 ![l1-m2b-assoc](https://raw.githubusercontent.com/klausrollmann/mc723/master/exercicio2/graphs/l1-m2b-assoc.png)
@@ -132,7 +132,7 @@ A melhor configuração obtida testando o programa 164 (gzip) foi:
     *   Associatividade: 8
 
 ##### Teste com outros programas
-Usando essas configurações de cache, foi verificada a taxa de miss-rate para F2B e M2B para outros dois programas e foi comparada com o resultado obtido para as medições do programa gzip.
+Usando essas configurações de cache, foi verificada a taxa de miss-rate para F2B e M2B para outros dois programas e foi comparada com o resultado obtido para as medições do programa gzip. O script para os testes usado foi o `comparation.sh`.
 
 ![testes](https://raw.githubusercontent.com/klausrollmann/mc723/master/exercicio2/graphs/testes.png)
 
