@@ -264,7 +264,6 @@ Os resultados da execução para o programa executado no simulador com dois proc
 
 #### Dual-Core
 
-	Info: /OSCI/SystemC: Simulation stopped by user.
     ArchC: Simulation statistics
         Times: 1.86 user, 0.00 system, 1.88 real
         Number of instructions executed: 108016784
@@ -277,11 +276,14 @@ Os resultados da execução para o programa executado no simulador com dois proc
 
 #### Single-Core
 
-	
+	ArchC: Simulation statistics
+		 Times: 1.86 user, 0.00 system, 1.87 real
+		 Number of instructions executed: 112227451
+		 Simulation speed: 60337.34 K instr/s
     
-Nota-se que a execução do programa dual-core, as instruções foram executadas em paralelo, sendo assim, o tempo para o programa terminar a execução é equivalente ao tempo para executar 108016784 instruções. No programa single-core, vemos que há um número maior de instruções executado, e o tempo de execução é o tempo para executar <<>> instruções.
+Nota-se que a execução do programa dual-core, as instruções foram executadas em paralelo, sendo assim, o tempo para o programa terminar a execução é equivalente ao tempo para executar 108016784 instruções. No programa single-core, vemos que há um número maior de instruções executado, e o tempo de execução é o tempo para executar 112227451 instruções. É possível notar uma melhora de 4147853 instruções, que corresponde à parte da imagem processada pelo processador 1.
 
-É importante notar que a melhor do processador dual-core não é metade, pois há tarefas que não podem ser feitas em paralelo. A impressão da matriz, por exemplo, foi feita somente pelo processador 0, o que fez com que a divisão de tarefas entre o processador 0 e 1 fosse desigual, e o ganho de desempenho fosse menor.
+É importante notar que a melhora do processador dual-core não é metade, pois há tarefas que não podem ser feitas em paralelo. A impressão da matriz, por exemplo, foi feita somente pelo processador 0, o que fez com que a divisão de tarefas entre o processador 0 e 1 fosse desigual, e o ganho de desempenho fosse menor. 
 Além disso, tarefas que necessitam de concorrência causam um overhead devido às instruções de `AcquireLock()` e `ReleaseLock()`.
 Portanto, a escolha de um processador com vários cores deve sempre levar em conta se a aplicação pode ser paralelizável e também se as tarefas executadas em paralelo possuem dependência.
     
